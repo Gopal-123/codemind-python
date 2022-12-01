@@ -1,0 +1,9 @@
+n=input()
+b=n.split()
+s=[97,101,105,111,117,65,69,73,79,85]
+for i in b:
+    d=0
+    for j in i:
+        if ord(j) in s:
+            d=d+1
+    print(d,end=" ")        
