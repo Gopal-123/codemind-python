@@ -1,13 +1,10 @@
 n=input()
-c=0
+l=""
 for i in n:
-    if ord(i)>=97 and ord(i)<=122:
-        if n.count(i)==1:
-            c+=1
-    elif ord(i)>=65 and ord(i)<=90:
-        c+=1
-if c==len(n):
+    if i not in l:
+        l+=i
+    else:
+        print("False")
+        break
+if l==n:
     print("True")
-else:
-    print("False")
-            
